@@ -9,10 +9,10 @@ import SwiftUI
 
 struct K {
     
-    //MARK: - Colors
-    static let bg = Color("bg")
-    static let cta = Color("cta")
-    static let white = Color("white")
-    static let secondary = Color("secondary")
+//    //MARK: - Colors
+//    static let bg = Color("bg")
+//    static let cta = Color("cta")
+//    static let white = Color("white")
+//    static let secondary = Color("secondary")
     
 }

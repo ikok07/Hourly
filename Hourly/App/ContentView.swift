@@ -12,8 +12,10 @@ struct ContentView: View {
     
     @Environment(\.modelContext) private var context
     
+    let timerController = TimerController()
+    
     @State private var openedTimer: Bool = false
-    @Query private var timers: [Timer]
+    @Query(filter: #Predicate<CustomTimer> { $0.isActive == true }) private var timers: [CustomTimer]
     
     var body: some View {
         NavigationStack {
@@ -21,9 +23,13 @@ struct ContentView: View {
                 List {
                     ForEach(timers) { timer in
                         TimerRowView(timer: timer)
+                            .task {
+                                timerController.startTimer(timer)
+                            }
                     }
                 }
                 .listStyle(.plain)
+                .transition(.slide)
             }
             .navigationTitle("Timers")
             .toolbar {

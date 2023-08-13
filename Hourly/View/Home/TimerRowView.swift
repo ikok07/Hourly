@@ -9,11 +9,11 @@ import SwiftUI
 
 struct TimerRowView: View {
     
-    let timer: Timer
+    let timer: CustomTimer
     
     var body: some View {
         HStack {
-            Text("Timer Name")
+            Text(timer.name)
                 .font(.title2)
                 .padding(.trailing)
             Group {
@@ -21,7 +21,7 @@ struct TimerRowView: View {
             }
             Spacer()
             Group {
-                Text("25:35")
+                Text(timer.timeLeft ?? "Starting..")
                     .font(.largeTitle)
                     .foregroundStyle(.cta)
             }
@@ -31,6 +31,6 @@ struct TimerRowView: View {
 }
 
 #Preview {
-    TimerRowView(timer: Timer(name: "Test timer", deadline: .now))
+    TimerRowView(timer: CustomTimer(name: "Test timer", deadline: .now))
         .padding(.horizontal)
 }

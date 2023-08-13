@@ -13,7 +13,7 @@
 		222621FB2A87C119002DDB77 /* CreateTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222621FA2A87C119002DDB77 /* CreateTimerView.swift */; };
 		222621FE2A87C273002DDB77 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222621FD2A87C273002DDB77 /* CustomTextFieldView.swift */; };
 		222622002A87C504002DDB77 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222621FF2A87C504002DDB77 /* CustomDatePicker.swift */; };
-		222622032A87E001002DDB77 /* StorageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222622022A87E001002DDB77 /* StorageController.swift */; };
+		22C2F2922A88D7E400FF6645 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2F2912A88D7E400FF6645 /* TimerController.swift */; };
 		22C637DA2A86B5F300923C50 /* HourlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C637D92A86B5F300923C50 /* HourlyApp.swift */; };
 		22C637DC2A86B5F300923C50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C637DB2A86B5F300923C50 /* ContentView.swift */; };
 		22C637DE2A86B5F700923C50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C637DD2A86B5F700923C50 /* Assets.xcassets */; };
@@ -29,7 +29,7 @@
 		222621FA2A87C119002DDB77 /* CreateTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTimerView.swift; sourceTree = "<group>"; };
 		222621FD2A87C273002DDB77 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 		222621FF2A87C504002DDB77 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
-		222622022A87E001002DDB77 /* StorageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageController.swift; sourceTree = "<group>"; };
+		22C2F2912A88D7E400FF6645 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		22C637D62A86B5F300923C50 /* Hourly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hourly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C637D92A86B5F300923C50 /* HourlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyApp.swift; sourceTree = "<group>"; };
 		22C637DB2A86B5F300923C50 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		222622012A87DFCD002DDB77 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				222622022A87E001002DDB77 /* StorageController.swift */,
+				22C2F2912A88D7E400FF6645 /* TimerController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -222,10 +222,10 @@
 			files = (
 				222622002A87C504002DDB77 /* CustomDatePicker.swift in Sources */,
 				222621FB2A87C119002DDB77 /* CreateTimerView.swift in Sources */,
+				22C2F2922A88D7E400FF6645 /* TimerController.swift in Sources */,
 				222621F62A87BD58002DDB77 /* StartStopTimerRowButtonView.swift in Sources */,
 				222621F32A87BA68002DDB77 /* TimerRowView.swift in Sources */,
 				22C637DC2A86B5F300923C50 /* ContentView.swift in Sources */,
-				222622032A87E001002DDB77 /* StorageController.swift in Sources */,
 				22C637EC2A86BA8200923C50 /* test.swift in Sources */,
 				222621F92A87C087002DDB77 /* TimerModel.swift in Sources */,
 				22C637DA2A86B5F300923C50 /* HourlyApp.swift in Sources */,

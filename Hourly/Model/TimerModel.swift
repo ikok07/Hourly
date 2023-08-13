@@ -9,14 +9,17 @@ import Foundation
 import SwiftData
 
 @Model
-class Timer {
+class CustomTimer {
     let id: UUID
     let name: String
     let deadline: Date
+    var timeLeft: String?
+    var isActive: Bool
     
     init(name: String, deadline: Date) {
         self.id = UUID()
         self.name = name
         self.deadline = deadline
+        self.isActive = true
     }
 }

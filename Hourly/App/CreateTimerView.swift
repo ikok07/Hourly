@@ -12,8 +12,6 @@ struct CreateTimerView: View {
     @Environment(\.dismiss) private var dismiss
     @Environment(\.modelContext) private var context
     
-    @EnvironmentObject private var storageController: StorageController
-    
     @State private var name: String = ""
     @State private var deadline: Date = Date()
     
@@ -27,8 +25,8 @@ struct CreateTimerView: View {
                 }
                 
                 Button(action: {
-                    if name.count > 0 {
-                        let newTimer = Timer(name: name, deadline: deadline)
+                    if name.count > 0 && deadline > .now {
+                        let newTimer = CustomTimer(name: name, deadline: deadline)
                         context.insert(newTimer)
                         dismiss()
                     }
@@ -40,7 +38,7 @@ struct CreateTimerView: View {
                     Spacer()
                 })
                 .buttonStyle(.borderedProminent)
-                .tint(name.count > 0 ? .cta : .secondary)
+                .tint(name.count > 0 && deadline > .now ? .cta : .secondary)
                 .padding(.top, 25)
                 .animation(.linear(duration: 0.1))
                 
@@ -56,5 +54,4 @@ struct CreateTimerView: View {
 #Preview {
     CreateTimerView()
         .padding(.horizontal)
-        .environmentObject(StorageController())
 }

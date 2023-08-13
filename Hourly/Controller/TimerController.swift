@@ -27,10 +27,10 @@ class TimerController {
                 let minutesLeftString = String(format: "%02d", Int(allSecondsLeft / 60) - onlyHoursLeft * 60)
                 let secondsLeftString = String(format: "%02d", Int(onlySecondsLeft))
 
-                if daysLeftString == "00" {
-                    customTimer.timeLeft = "\(hoursLeftString):\(minutesLeftString):\(secondsLeftString)"
-                } else if hoursLeftString == "00" {
+                if daysLeftString == "00" && hoursLeftString == "00" {
                     customTimer.timeLeft = "\(minutesLeftString):\(secondsLeftString)"
+                } else if daysLeftString == "00" {
+                    customTimer.timeLeft = "\(hoursLeftString):\(minutesLeftString):\(secondsLeftString)"
                 } else {
                     customTimer.timeLeft = "\(daysLeftString):\(hoursLeftString):\(minutesLeftString):\(secondsLeftString)"
                 }

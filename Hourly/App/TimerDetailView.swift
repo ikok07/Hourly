@@ -23,8 +23,9 @@ struct TimerDetailView: View {
         let timerTime = deadline.timeIntervalSince1970 - creationDate.timeIntervalSince1970
         let elapsedTime = currentDate.timeIntervalSince1970 - creationDate.timeIntervalSince1970
         let percentage = 1 - (elapsedTime / timerTime)
-        
-        if percentage == 0 {
+        print(percentage)
+        if percentage < 0.06 {
+            context.delete(timer)
             dismiss()
         }
         

@@ -26,7 +26,6 @@ class TimerController {
                 
                 customTimer.timeLeft = "\(hoursLeftString):\(secondsLeftString)"
             } else {
-                print("Timer finished")
                 customTimer.isActive = false
                 stopTimer()
             }

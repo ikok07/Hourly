@@ -15,6 +15,7 @@
 		225E1E622A88F19D002F5649 /* TimerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E1E612A88F19D002F5649 /* TimerListView.swift */; };
 		225E1E642A88F26C002F5649 /* TimerHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E1E632A88F26C002F5649 /* TimerHistoryView.swift */; };
 		225E1E672A88F31E002F5649 /* HistoryTimerRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E1E662A88F31E002F5649 /* HistoryTimerRowView.swift */; };
+		225E1E692A88F722002F5649 /* TimerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225E1E682A88F722002F5649 /* TimerDetailView.swift */; };
 		22C2F2922A88D7E400FF6645 /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2F2912A88D7E400FF6645 /* TimerController.swift */; };
 		22C637DA2A86B5F300923C50 /* HourlyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C637D92A86B5F300923C50 /* HourlyApp.swift */; };
 		22C637DC2A86B5F300923C50 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C637DB2A86B5F300923C50 /* ContentView.swift */; };
@@ -33,6 +34,7 @@
 		225E1E612A88F19D002F5649 /* TimerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerListView.swift; sourceTree = "<group>"; };
 		225E1E632A88F26C002F5649 /* TimerHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerHistoryView.swift; sourceTree = "<group>"; };
 		225E1E662A88F31E002F5649 /* HistoryTimerRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTimerRowView.swift; sourceTree = "<group>"; };
+		225E1E682A88F722002F5649 /* TimerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerDetailView.swift; sourceTree = "<group>"; };
 		22C2F2912A88D7E400FF6645 /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 		22C637D62A86B5F300923C50 /* Hourly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hourly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C637D92A86B5F300923C50 /* HourlyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyApp.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				222621FA2A87C119002DDB77 /* CreateTimerView.swift */,
 				225E1E612A88F19D002F5649 /* TimerListView.swift */,
 				225E1E632A88F26C002F5649 /* TimerHistoryView.swift */,
+				225E1E682A88F722002F5649 /* TimerDetailView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				22C2F2922A88D7E400FF6645 /* TimerController.swift in Sources */,
 				222621F32A87BA68002DDB77 /* TimerRowView.swift in Sources */,
 				22C637DC2A86B5F300923C50 /* ContentView.swift in Sources */,
+				225E1E692A88F722002F5649 /* TimerDetailView.swift in Sources */,
 				22C637EC2A86BA8200923C50 /* test.swift in Sources */,
 				222621F92A87C087002DDB77 /* TimerModel.swift in Sources */,
 				225E1E672A88F31E002F5649 /* HistoryTimerRowView.swift in Sources */,

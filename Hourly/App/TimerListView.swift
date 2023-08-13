@@ -22,7 +22,7 @@ struct TimerListView: View {
             VStack {
                 List {
                     ForEach(timers) { timer in
-                        withAnimation {
+                        NavigationLink(destination: TimerDetailView(timer: timer)) {
                             TimerRowView(timer: timer)
                                 .task {
                                     timerController.startTimer(timer)

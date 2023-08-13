@@ -11,6 +11,7 @@ import SwiftData
 @Model
 class CustomTimer {
     let id: UUID
+    let creationDate: Date
     let name: String
     let deadline: Date
     var timeLeft: String?
@@ -18,6 +19,7 @@ class CustomTimer {
     
     init(name: String, deadline: Date) {
         self.id = UUID()
+        self.creationDate = Date()
         self.name = name
         self.deadline = deadline
         self.isActive = true

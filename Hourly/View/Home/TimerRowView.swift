@@ -16,9 +16,6 @@ struct TimerRowView: View {
             Text(timer.name)
                 .font(.title2)
                 .padding(.trailing)
-            Group {
-                StartStopTimerRowButtonView(state: .pause)
-            }
             Spacer()
             Group {
                 Text(timer.timeLeft ?? "Starting..")
@@ -26,7 +23,6 @@ struct TimerRowView: View {
                     .foregroundStyle(.cta)
             }
         }
-        .padding(EdgeInsets(top: 5, leading: 0, bottom: 5, trailing: 0))
     }
 }
 

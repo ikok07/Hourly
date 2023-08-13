@@ -27,6 +27,11 @@ struct ContentView: View {
                                 timerController.startTimer(timer)
                             }
                     }
+                    .onDelete(perform: { indexSet in
+                        if let index = indexSet.first {
+                            context.delete(timers[index])
+                        }
+                    })
                 }
                 .listStyle(.plain)
                 .transition(.slide)
